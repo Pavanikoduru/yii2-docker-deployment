@@ -1,1 +1,18 @@
-# yii2-docker-swarm-ansible-nginx
+# yii2 Docker Deployment
+
+This project demonstrates how to deploy a **PHP Yii2 application** using **Docker** on **Ubuntu 24.04** without using any cloud provider. You can access the application locally via browser at `http://localhost:8000`.
+
+1. Clone the repository
+git clone https://github.com/Pavanikoduru/yii2-docker-swarm-ansible-nginx.git
+cd yii2-docker-deployment/yii2-docker
+
+2. Build the Docker image
+docker build -t yii2-app .
+
+3. Run the Docker container:
+docker run -d -p 8000:80 --name yii2_app yii2-app
+ 
+4. Open the app in your browser
+Go to http://localhost:8000
+
+
