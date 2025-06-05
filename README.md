@@ -11,6 +11,13 @@ docker build -t yii2-app .
 
 3. Run the Docker container:
 docker run -d -p 8000:80 --name yii2_app yii2-app
+
+If port already in use means:
+Stop and Remove the container:
+docker stop yii2_app
+docker rm yii2_app
+
+then agaon run the docker conatiner command
  
 4. Open the app in your browser
 Go to http://localhost:8000
