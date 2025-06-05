@@ -17,7 +17,9 @@ docker run -d -p 8000:80 --name yii2_app yii2-app
 http://localhost:8000
 
 If port 8000 is already in use
+
 Find the container ID running on the port: docker ps
+
 Stop the container: docker stop <container_id>
 
 Remove the container: docker rm <container_id>
