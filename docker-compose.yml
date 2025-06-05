@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  yii2-app:
+    build: .
+    ports:
+      - "8000:80"
+    volumes:
+      - .:/var/www/html
+    restart: always
+
